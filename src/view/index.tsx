@@ -23,10 +23,10 @@ const View = () => {
                     <Typography.Title level={5}>
                       Transaction Instructions
                     </Typography.Title>
-                    <Typography.Text type="secondary">
+                    {/* <Typography.Text type="secondary">
                       Explore & install DApps on Senhub, build on Sentre, and
                       send your project to the moon with Sen Suite
-                    </Typography.Text>
+                    </Typography.Text> */}
                   </Space>
                 </Col>
                 {!!txInstructions && !!Object.keys(txInstructions).length ? (
