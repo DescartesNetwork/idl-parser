@@ -1,47 +1,49 @@
-import { useCallback, useEffect, useMemo } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { useWallet, createPDB } from '@sentre/senhub'
+import { UploadIdl, useParser } from 'idl-parser'
 
-import { Row, Col, Typography, Button, Space } from 'antd'
-import IonIcon from '@sentre/antd-ionicon'
-
-import { AppDispatch, AppState } from 'model'
-import { increaseCounter } from 'model/main.controller'
-import configs from 'configs'
-
-const {
-  manifest: { appId },
-} = configs
+import { Card, Col, Empty, Row, Space, Typography } from 'antd'
+import ButtonTxInstruct from './buttonTxInstruction'
 
 const View = () => {
-  const {
-    wallet: { address },
-  } = useWallet()
-  const dispatch = useDispatch<AppDispatch>()
-  const { counter } = useSelector((state: AppState) => state.main)
-
-  const pdb = useMemo(() => createPDB(address, appId), [address])
-  const increase = useCallback(() => dispatch(increaseCounter()), [dispatch])
-  useEffect(() => {
-    if (pdb) pdb.setItem('counter', counter)
-  }, [pdb, counter])
+  const { txInstructions } = useParser()
 
   return (
-    <Row gutter={[24, 24]} align="middle">
-      <Col span={24}>
-        <Space align="center">
-          <IonIcon name="newspaper-outline" />
-          <Typography.Title level={4}>App View</Typography.Title>
-        </Space>
-      </Col>
-      <Col span={24}>
-        <Typography.Text>Address: {address}</Typography.Text>
-      </Col>
-      <Col>
-        <Typography.Text>Counter: {counter}</Typography.Text>
-      </Col>
-      <Col>
-        <Button onClick={increase}>Increase</Button>
+    <Row gutter={[24, 24]} justify="center">
+      <Col md={12} lg={8}>
+        <Row gutter={[24, 24]}>
+          <Col span={24}>
+            <Card bordered={false}>
+              <UploadIdl />
+            </Card>
+          </Col>
+          <Col span={24}>
+            <Card bordered={false}>
+              <Row gutter={[24, 24]}>
+                <Col span={24}>
+                  <Space direction="vertical">
+                    <Typography.Title level={5}>
+                      Transaction Instructions
+                    </Typography.Title>
+                    <Typography.Text type="secondary">
+                      Explore & install DApps on Senhub, build on Sentre, and
+                      send your project to the moon with Sen Suite
+                    </Typography.Text>
+                  </Space>
+                </Col>
+                {!!txInstructions && !!Object.keys(txInstructions).length ? (
+                  Object.keys(txInstructions).map((key, idx) => (
+                    <Col md={24} lg={12} key={idx}>
+                      <ButtonTxInstruct instruct={key} block />
+                    </Col>
+                  ))
+                ) : (
+                  <Col span={24} style={{ textAlign: 'center' }}>
+                    <Empty />
+                  </Col>
+                )}
+              </Row>
+            </Card>
+          </Col>
+        </Row>
       </Col>
     </Row>
   )

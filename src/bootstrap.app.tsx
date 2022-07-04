@@ -1,21 +1,42 @@
+import { useCallback, useEffect, useState } from 'react'
 import { Provider } from 'react-redux'
 import { WalletProvider, UIProvider } from '@sentre/senhub'
+import { ParserProvider } from 'idl-parser'
 
 import View from 'view'
 
-import model from 'model'
 import configs from 'configs'
+import model from 'model'
 
 const {
   manifest: { appId },
+  sol: { node },
 } = configs
 
 export const Page = () => {
+  const [walletAddress, setWalletAddress] = useState('')
+
+  const getWalletAddress = useCallback(async () => {
+    if (!window.sentre.wallet) return
+    const address = await window.sentre.wallet.getAddress()
+    setWalletAddress(address)
+  }, [])
+
+  useEffect(() => {
+    getWalletAddress()
+  }, [getWalletAddress])
+
   return (
     <UIProvider appId={appId} antd>
       <WalletProvider>
         <Provider store={model}>
-          <View />
+          <ParserProvider
+            connection={node}
+            walletAddress={walletAddress}
+            programAddresses={{ provider: '' }}
+          >
+            <View />
+          </ParserProvider>
         </Provider>
       </WalletProvider>
     </UIProvider>
