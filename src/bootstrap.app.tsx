@@ -1,12 +1,12 @@
 import { useCallback, useEffect, useState } from 'react'
 import { Provider } from 'react-redux'
 import { WalletProvider, UIProvider } from '@sentre/senhub'
-import { ParserProvider } from 'idl-parser'
 
 import View from 'view'
 
 import configs from 'configs'
 import model from 'model'
+import { ParserProvider } from 'idl-parser-core'
 
 const {
   manifest: { appId },

@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { useParser } from 'idl-parser'
 import { useWallet } from '@sentre/senhub'
 import { Transaction } from '@solana/web3.js'
+import { useParser } from 'idl-parser-core'
 
 import { Button, ButtonProps } from 'antd'
 
