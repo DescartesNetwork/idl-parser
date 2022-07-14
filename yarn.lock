@@ -1975,10 +1975,10 @@
   resolved "https://registry.npmjs.org/@sentre/react-lazyload/-/react-lazyload-3.2.2.tgz"
   integrity sha512-NKJhz9G8pModoZJaLMziRJtd582pFHbIydNXwRI72ECkjqbc7XIgBX+8kssrUtRxK2rW9VVQnGKDpmyZ8iSIyw==
 
-"@sentre/senhub@^3.0.34":
-  version "3.0.34"
-  resolved "https://registry.npmjs.org/@sentre/senhub/-/senhub-3.0.34.tgz"
-  integrity sha512-KnrcuGCBpLF5ccg41a/EzwroUL6ig5VertZnv7eJJgTRCZ5dGQ9MUraHclDatL6hhQkZATdDZGkf7sWHBRfHOw==
+"@sentre/senhub@^3.0.44":
+  version "3.0.44"
+  resolved "https://registry.yarnpkg.com/@sentre/senhub/-/senhub-3.0.44.tgz#9ba0ab4c62e8216a720aefcd85e270a31bf3b018"
+  integrity sha512-e7rw/nW+rs4QvGfHYOwJoMYxS48V8N1mWis+279EzUAS5HcJ2UalTwxqgG5+wv3FEydP9GRlJjlWCwZlan4VIA==
   dependencies:
     "@dnd-kit/core" "^4.0.1"
     "@dnd-kit/sortable" "^5.0.0"
@@ -6854,10 +6854,10 @@ identity-obj-proxy@^3.0.0:
   dependencies:
     harmony-reflect "^1.4.6"
 
-idl-parser-core@0.4.14:
-  version "0.4.14"
-  resolved "https://registry.yarnpkg.com/idl-parser-core/-/idl-parser-core-0.4.14.tgz#60ceaee83af6a8335613fe3663bcd520555de271"
-  integrity sha512-SgT90VX8ogPOUJW6ykfdfCRE0U5aHtH0Po+GcwACHcI5MO6yiMve64wwKn9bPb3s1zF+ewj3LPG0ufyRbhCt4A==
+idl-parser-core@0.4.20:
+  version "0.4.20"
+  resolved "https://registry.yarnpkg.com/idl-parser-core/-/idl-parser-core-0.4.20.tgz#91860af11f99dd2322939b29822535ed0cfa4356"
+  integrity sha512-Zi8kRbaP4JXa5DXKpBh1c3XEMVkf09Lz8svAbjgaFgLhJ47U/daMItqGLEbQ3RDLjTl9fFeV66T401T4gJp5WA==
   dependencies:
     "@project-serum/anchor" "^0.24.2"
     "@senswap/sen-js" "^1.3.5"
