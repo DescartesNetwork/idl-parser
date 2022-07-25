@@ -34,7 +34,7 @@ const App = () => {
 
 _Giao diện mặc định của thư viện idl-parser-core_
 
-#### [IDLParserWrapper]
+#### IDLParserWrapper
 
 > ` import { IDLParserWrapper } from 'idl-parser-core'`
 
