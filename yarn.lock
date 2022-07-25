@@ -1975,10 +1975,10 @@
   resolved "https://registry.npmjs.org/@sentre/react-lazyload/-/react-lazyload-3.2.2.tgz"
   integrity sha512-NKJhz9G8pModoZJaLMziRJtd582pFHbIydNXwRI72ECkjqbc7XIgBX+8kssrUtRxK2rW9VVQnGKDpmyZ8iSIyw==
 
-"@sentre/senhub@^3.0.44":
-  version "3.0.44"
-  resolved "https://registry.yarnpkg.com/@sentre/senhub/-/senhub-3.0.44.tgz#9ba0ab4c62e8216a720aefcd85e270a31bf3b018"
-  integrity sha512-e7rw/nW+rs4QvGfHYOwJoMYxS48V8N1mWis+279EzUAS5HcJ2UalTwxqgG5+wv3FEydP9GRlJjlWCwZlan4VIA==
+"@sentre/senhub@^3.0.47":
+  version "3.0.47"
+  resolved "https://registry.yarnpkg.com/@sentre/senhub/-/senhub-3.0.47.tgz#ad9eb68fb123423851e45b74d558898eec7fcdfb"
+  integrity sha512-Abv0U9vJQryE1vb7HX05q5u8Qzq4Z+HwXG9WIq5nIKgyX8ZhR8TUL+npbkbi8rXrIJPboJuw0wIUEvtk3ZEZyg==
   dependencies:
     "@dnd-kit/core" "^4.0.1"
     "@dnd-kit/sortable" "^5.0.0"
@@ -2512,6 +2512,11 @@
   dependencies:
     "@types/node" "*"
 
+"@types/highlight.js@^9.7.0":
+  version "9.12.4"
+  resolved "https://registry.yarnpkg.com/@types/highlight.js/-/highlight.js-9.12.4.tgz#8c3496bd1b50cc04aeefd691140aa571d4dbfa34"
+  integrity sha512-t2szdkwmg2JJyuCM20e8kR2X59WCE5Zkl4bzm1u1Oukjm79zpbiAv+QjnwLnuuV0WHEcX2NgUItu0pAMKuOPww==
+
 "@types/history@^4.7.11":
   version "4.7.11"
   resolved "https://registry.npmjs.org/@types/history/-/history-4.7.11.tgz"
@@ -2710,6 +2715,14 @@
     "@types/prop-types" "*"
     "@types/scheduler" "*"
     csstype "^3.0.2"
+
+"@types/remarkable@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@types/remarkable/-/remarkable-2.0.3.tgz#ba2e5edada8f0fe64c658beb2127e06ac0b9c1c8"
+  integrity sha512-QQUBeYApuHCNl9Br6ZoI3PlKmwZ69JHrlJktJXnjxobia9liZgsI70fm8PnCqVFAcefYK+9PGzR5L/hzCslNYQ==
+  dependencies:
+    "@types/highlight.js" "^9.7.0"
+    highlight.js "^9.7.0"
 
 "@types/resolve@1.17.1":
   version "1.17.1"
@@ -6642,6 +6655,11 @@ he@^1.2.0:
   resolved "https://registry.npmjs.org/he/-/he-1.2.0.tgz"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
 
+highlight.js@^9.7.0:
+  version "9.18.5"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.18.5.tgz#d18a359867f378c138d6819edfc2a8acd5f29825"
+  integrity sha512-a5bFyofd/BHCX52/8i8uJkjr9DYwXIPnM/plwI6W7ezItLGqzt7X2G2nXuYSfsIJdkwwj/g9DG1LkcGJI/dDoA==
+
 history@^4.9.0:
   version "4.10.1"
   resolved "https://registry.npmjs.org/history/-/history-4.10.1.tgz"
@@ -6854,10 +6872,10 @@ identity-obj-proxy@^3.0.0:
   dependencies:
     harmony-reflect "^1.4.6"
 
-idl-parser-core@^0.4.25:
-  version "0.4.25"
-  resolved "https://registry.yarnpkg.com/idl-parser-core/-/idl-parser-core-0.4.25.tgz#49a63fcb3d4d80413605dd2ae9148bdfd1189acb"
-  integrity sha512-kIW7eGdIV1I2iPAOVU/RsNlkrr8RAoH0BejkysT4KpzdIkaPzNyFk5H+MUH/SH1jWXhMYLM8ACecuf1yP5+uNw==
+idl-parser-core@^0.4.26:
+  version "0.4.26"
+  resolved "https://registry.yarnpkg.com/idl-parser-core/-/idl-parser-core-0.4.26.tgz#b98c47a1b5577b255e9f3ee8922bc864e5029aac"
+  integrity sha512-Z+4wUPzthnbTHsqsciXsZUOYMysjEMwqQoVJhGMIvzU+mwhNCrw7jspsWii5jquOxFVr9CSOfXRELk7UrJh+Yg==
   dependencies:
     "@project-serum/anchor" "^0.24.2"
     "@senswap/sen-js" "^1.3.5"
@@ -11910,7 +11928,7 @@ relateurl@^0.2.7:
 
 remarkable@^2.0.1:
   version "2.0.1"
-  resolved "https://registry.npmjs.org/remarkable/-/remarkable-2.0.1.tgz"
+  resolved "https://registry.yarnpkg.com/remarkable/-/remarkable-2.0.1.tgz#280ae6627384dfb13d98ee3995627ca550a12f31"
   integrity sha512-YJyMcOH5lrR+kZdmB0aJJ4+93bEojRZ1HGDn9Eagu6ibg7aVZhc3OWbbShRid+Q5eAfsEqWxpe+g5W5nYNfNiA==
   dependencies:
     argparse "^1.0.10"
