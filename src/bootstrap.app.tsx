@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 import { Provider } from 'react-redux'
-import { WalletProvider, UIProvider } from '@sentre/senhub'
+import { WalletProvider, UIProvider, rpc } from '@sentre/senhub'
 
 import View from 'view'
 
@@ -10,7 +10,6 @@ import { ParserProvider } from 'idl-parser-core'
 
 const {
   manifest: { appId },
-  sol: { node },
 } = configs
 
 export const Page = () => {
@@ -31,7 +30,7 @@ export const Page = () => {
       <WalletProvider>
         <Provider store={model}>
           <ParserProvider
-            connection={node}
+            connection={rpc}
             walletAddress={walletAddress}
             programAddresses={{ provider: '' }}
           >
