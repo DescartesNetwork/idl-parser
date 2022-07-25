@@ -1,12 +1,12 @@
 # **IDL Parser**
 
-> Hỗ trợ chuyển đổi từ file IDL sang `transaction instruction`. Tiện lợi cho việc chạy thử smart contract, tiết kiệm thời gian cho việc viết test case
+> Support converting IDL files to `transaction instruction`. Useful for smart contract test run, time-saving for writing test case.
 
-## Cài đặt
+## Install
 
 `yarn add idl-parser-core`
 
-## Sử dụng
+## Usage
 
 ```js
 import { ParserProvider } from 'idl-parser-core'
@@ -26,8 +26,8 @@ const App = () => {
 }
 ```
 
-> connection: địa chỉ rpc api \
-> walletAddress: địa chỉ ví \
+> connection: rpc api url address \
+> walletAddress: user wallet address \
 > programAddresses: địa chỉ chương trình smartcontract
 
 ## Component
@@ -145,6 +145,8 @@ _Cung cấp các function để thao tác với dữ liệu, thêm, sửa, xoá 
     ```
 
 ### <a id="instructionview" href="javascript:void"></a> Component InstructionView
+
+#
 
 ![uploadIdl](./src/static/images/docs/selection.png)
 

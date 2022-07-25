@@ -6872,10 +6872,10 @@ identity-obj-proxy@^3.0.0:
   dependencies:
     harmony-reflect "^1.4.6"
 
-idl-parser-core@^0.4.26:
-  version "0.4.26"
-  resolved "https://registry.yarnpkg.com/idl-parser-core/-/idl-parser-core-0.4.26.tgz#b98c47a1b5577b255e9f3ee8922bc864e5029aac"
-  integrity sha512-Z+4wUPzthnbTHsqsciXsZUOYMysjEMwqQoVJhGMIvzU+mwhNCrw7jspsWii5jquOxFVr9CSOfXRELk7UrJh+Yg==
+idl-parser-core@^0.4.27:
+  version "0.4.27"
+  resolved "https://registry.yarnpkg.com/idl-parser-core/-/idl-parser-core-0.4.27.tgz#15d3f24b74b288bd900ef1c78c9026d54a2ed8e4"
+  integrity sha512-mWJiC9H1CdpZDBD8iPvPdrW4Oc5Am1F7AICZzrasp9WjN4W8zT4VS/uQ81VDF0gNTY6nryd8QLwmoNM07+3uNA==
   dependencies:
     "@project-serum/anchor" "^0.24.2"
     "@senswap/sen-js" "^1.3.5"
