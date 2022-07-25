@@ -42,7 +42,7 @@ _Giao diện mặc định của thư viện idl-parser-core_
 <IDLParserWrapper />
 ```
 
-- ##### _Giao diện mặc định của thư viện idl-parser-core: upload file idl, form accounts và arguments_
+- _Giao diện mặc định của thư viện idl-parser-core: upload file idl, form accounts và arguments_
 
 #### TemplateView, InstructionView
 
@@ -54,8 +54,8 @@ _Giao diện mặc định của thư viện idl-parser-core_
 <InstructionView />
 ```
 
-- ##### _TemplateView: Giao diện cấu trúc file IDL được tải lên._
-- ##### _[InstructionView](#instructionview): Giao diện mặc định form accounts và arguments của file IDL được tải lên._
+- _**TemplateView**: Giao diện cấu trúc file IDL được tải lên._
+- _**[InstructionView](#instructionview)**: Giao diện mặc định form accounts và arguments của file IDL được tải lên._
 
 #### UploadIdl, ViewUploadedIdl
 
@@ -67,8 +67,8 @@ _Giao diện mặc định của thư viện idl-parser-core_
 <ViewUploadedIdl />
 ```
 
-- ##### _UploadIdl: Giao diện mặc định để tải lên file IDL._
-- ##### ViewUploadedIdl: Giao diện mặc định hiển thị file IDL được tải lên.\_
+- _**UploadIdl**: Giao diện mặc định để tải lên file IDL._
+- **ViewUploadedIdl**: Giao diện mặc định hiển thị file IDL được tải lên.\_
 
 ## Hooks
 
@@ -76,25 +76,25 @@ _Cung cấp các function để thao tác với dữ liệu, thêm, sửa, xoá 
 
 - ### useParser
 
-  - #### uploadIdl: function tải lên file IDL
-  - #### removeIdl: function xoá file IDL được tải lên
-  - #### parser: dữ liệu của file IDL được tải lên
+  - **uploadIdl**: function tải lên file IDL
+  - **removeIdl:** function xoá file IDL được tải lên
+  - **parser**: dữ liệu của file IDL được tải lên
     ```js
     const {
       parser: { idl, ixSelected, accountsMetas, argsMetas, remainingAccounts },
     } = useParser()
     ```
-    - #### idl: file IDL được tải lên
-    - #### accountsMetas: dữ liệu accounts.
-    - #### argsMetas: dữ liệu argsMetas.
-    - #### ixSelected: instruction đang được chọn.
-    - #### remainingAccounts: dữ liệu remainingAccounts.
-  - #### connection: địa chỉ rpc blockchain.
-  - #### walletAddress: địa chỉ ví của người dùng.
-  - #### programAddresses: địa chỉ chương trình smartcontract.
-    #### `programAddress.idl` địa chỉ program được lấy từ file IDL tải lên.
-    #### `programAddress.custom` địa chỉ program được người dùng thêm, sửa , xoá.
-    #### `programAddress.provider` địa chỉ program bắt buộc thêm vào khi khởi tạo providerParser để thư viện xác định địa chỉ chương trình mà fileIDL đang tương tác.
+    - **idl**: file IDL được tải lên
+    - **accountsMetas**: dữ liệu accounts.
+    - **argsMetas**: dữ liệu argsMetas.
+    - **ixSelected**: instruction đang được chọn.
+    - **remainingAccounts**: dữ liệu remainingAccounts.
+  - **connection**: địa chỉ rpc blockchain.
+  - **walletAddress**: địa chỉ ví của người dùng.
+  - **programAddresses**: địa chỉ chương trình smartcontract.\
+    **`programAddress.idl`** địa chỉ program được lấy từ file IDL tải lên.\
+    **`programAddress.custom`** địa chỉ program được người dùng thêm, sửa , xoá.\
+    **`programAddress.provider`** địa chỉ program bắt buộc thêm vào khi khởi tạo providerParser để thư viện xác định địa chỉ chương trình mà fileIDL đang tương tác.
     ```js
     const {
       programAddress: {
@@ -104,35 +104,35 @@ _Cung cấp các function để thao tác với dữ liệu, thêm, sửa, xoá 
       },
     } = useParser()
     ```
-  - #### setProgramAddress(programAddress: string): function cài địa chỉ cho chương trình IDL. Địa chỉ chương trình sẽ được thêm vào _`programAddress.custom`_
+  - **setProgramAddress**(programAddress: string): function cài địa chỉ cho chương trình IDL. Địa chỉ chương trình sẽ được thêm vào _`programAddress.custom`_
     ```js
     const {
       programAddress: { custom: customProgramAddress },
     } = useParser()
     ```
-  - #### setAccountsMeta({ name: string, data: KeypairMeta }): function thêm dữ liệu cho trường accounts. Dữ liệu sẽ được thêm vào _`parser.accountsMetas`_.
+  - **setAccountsMeta**({ name: string, data: KeypairMeta }): function thêm dữ liệu cho trường accounts. Dữ liệu sẽ được thêm vào _`parser.accountsMetas`_.
     ```js
     const {
       parser: { accountsMetas },
     } = useParser()
     ```
-  - #### setArgsMeta({ name: string, val: string }): function thêm dữ liệu cho trường arguments. Dữ liệu sẽ được thêm vào _`parser.argsMetas`_.
+  - **setArgsMeta**({ name: string, val: string }): function thêm dữ liệu cho trường arguments. Dữ liệu sẽ được thêm vào _`parser.argsMetas`_.
     ```js
     const {
       parser: { argsMetas },
     } = useParser()
     ```
-  - #### setInstruction(val: string): function chọn instruction để thao tác. Instruction được chọn sẽ thêm vào _`parser.ixSelected`_.
+  - **setInstruction**(val: string): function chọn instruction để thao tác. Instruction được chọn sẽ thêm vào _`parser.ixSelected`_.
     ```js
     const {
       parser: { ixSelected },
     } = useParser()
     ```
-  - #### txInstructions: transaction instruction được chuyển đổi sau khi điền đầy đủ thông tin accounts, argument và remainning accounts nếu có.
+  - **txInstructions**: transaction instruction được chuyển đổi sau khi điền đầy đủ thông tin accounts, argument và remainning accounts nếu có.
     ```js
     const { txInstructions } = useParser()
     ```
-  - #### setTxInstructions: function thêm dữ liệu cho txInstructions.
+  - **setTxInstructions**: function thêm dữ liệu cho txInstructions.
 
     ```js
     const { setTxInstructions } = useParser()
@@ -148,10 +148,10 @@ _Cung cấp các function để thao tác với dữ liệu, thêm, sửa, xoá 
 
 ![uploadIdl](./src/static/images/docs/selection.png)
 
-- ##### Wallet Address: địa chỉ ví được cung cấp từ parserProvider
-- ##### New Keypaire: tạo 1 keypair mới.
-- ##### Program Account Data: lấy dữ liệu của account từ địa chỉ account. Ví dụ nhập địa chỉ pool để lấy thông tin của pool.
-- ##### PDA - Token Account: derive địa chỉ token acount từ địa chỉ mint và địa chỉ owner.
-- ##### PDA - Orther: tạo một địa chỉ bằng cách hash 2 chuổi ký tự với nhau.
-- ##### Recent: Tất cả những địa chỉ đã nhập trước đó.
-- ##### System: những địa chỉ chương trình mặc định được cung cấp bởi Solana
+- **Wallet Address**: địa chỉ ví được cung cấp từ parserProvider
+- **New Keypaire**: tạo 1 keypair mới.
+- **Program Account Data**: lấy dữ liệu của account từ địa chỉ account. Ví dụ nhập địa chỉ pool để lấy thông tin của pool.
+- **PDA - Token Account**: derive địa chỉ token acount từ địa chỉ mint và địa chỉ owner.
+- **PDA - Orther**: tạo một địa chỉ bằng cách hash 2 chuổi ký tự với nhau.
+- **Recent**: Tất cả những địa chỉ đã nhập trước đó.
+- **System**: những địa chỉ chương trình mặc định được cung cấp bởi Solana
