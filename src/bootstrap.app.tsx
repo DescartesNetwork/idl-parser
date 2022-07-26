@@ -1,12 +1,15 @@
 import { useCallback, useEffect, useState } from 'react'
 import { Provider } from 'react-redux'
 import { WalletProvider, UIProvider, rpc } from '@sentre/senhub'
+import { ParserProvider } from 'idl-parser-core'
 
 import View from 'view'
 
-import configs from 'configs'
 import model from 'model'
-import { ParserProvider } from 'idl-parser-core'
+import configs from 'configs'
+
+import 'static/styles/dark.less'
+import 'static/styles/light.less'
 
 const {
   manifest: { appId },
@@ -26,7 +29,7 @@ export const Page = () => {
   }, [getWalletAddress])
 
   return (
-    <UIProvider appId={appId} antd>
+    <UIProvider appId={appId} antd={{ prefixCls: appId }}>
       <WalletProvider>
         <Provider store={model}>
           <ParserProvider

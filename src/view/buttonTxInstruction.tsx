@@ -19,10 +19,11 @@ const ButtonTxInstruct = ({ instruct, ...props }: ButtonTxInstructProps) => {
     try {
       setLoading(true)
       if (!txInstructions || !Object.keys(txInstructions).length) return
-      const instruction = txInstructions[key]
+      const { data: instruction, signer } = txInstructions[key]
+
       const transaction = new Transaction().add(instruction)
       const provider = getAnchorProvider(walletAddress)
-      const txId = await provider.sendAndConfirm(transaction)
+      const txId = await provider.sendAndConfirm(transaction, signer)
       notifySuccess(key, txId)
     } catch (error) {
       notifyError(error)
