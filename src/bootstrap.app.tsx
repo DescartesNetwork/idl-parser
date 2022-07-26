@@ -33,9 +33,10 @@ export const Page = () => {
       <WalletProvider>
         <Provider store={model}>
           <ParserProvider
-            connection={rpc}
+            rpc={rpc}
             walletAddress={walletAddress}
             programAddresses={{ provider: '' }}
+            appId={appId}
           >
             <View />
           </ParserProvider>

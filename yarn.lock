@@ -7095,10 +7095,10 @@ identity-obj-proxy@^3.0.0:
   dependencies:
     harmony-reflect "^1.4.6"
 
-idl-parser-core@^0.4.38:
-  version "0.4.38"
-  resolved "https://registry.yarnpkg.com/idl-parser-core/-/idl-parser-core-0.4.38.tgz#03961f42e0c77d23686e95df85f7714a35e21de6"
-  integrity sha512-0Z/073/5RBBiKnCC3IruRuBwr1G1gyl8aNjnei4BIKdDmKyH7OeliO8gYuHcuClULOR8v2W7qu9uCz3ZOJVY0g==
+idl-parser-core@^0.4.40:
+  version "0.4.40"
+  resolved "https://registry.yarnpkg.com/idl-parser-core/-/idl-parser-core-0.4.40.tgz#e15a01008fffd580fbe93bb5d1223148f258bc1e"
+  integrity sha512-KPztMuyiZnCxAr949MuEI6RJoU6ch7bYgROCzI8IqXLtLhS1D8XVrZoDxkFik7GnO5oiTIgRwrqM0iw9wUTgNQ==
   dependencies:
     "@project-serum/anchor" "^0.24.2"
     "@sen-use/web3" "^1.2.7"
