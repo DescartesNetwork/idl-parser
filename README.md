@@ -144,16 +144,76 @@ _Cung cấp các function để thao tác với dữ liệu, thêm, sửa, xoá 
     }
     ```
 
-### <a id="instructionview" href="javascript:void"></a> Component InstructionView
+# <a id="guideline" href="javascript:void"></a> Guideline
+
+</br>
+
+### <a id="upload_idl" href="javascript:void"></a> Upload file idl
+
+- Button `Choose IDL file`: select to upload file idl.
+
+<p align="center"><img src="./src/static/images/docs/upload_file.png" width="400"/></p>
 
 #
 
-![uploadIdl](./src/static/images/docs/selection.png)
+</br>
 
-- **Wallet Address**: địa chỉ ví được cung cấp từ parserProvider
-- **New Keypaire**: tạo 1 keypair mới.
-- **Program Account Data**: lấy dữ liệu của account từ địa chỉ account. Ví dụ nhập địa chỉ pool để lấy thông tin của pool.
-- **PDA - Token Account**: derive địa chỉ token acount từ địa chỉ mint và địa chỉ owner.
-- **PDA - Orther**: tạo một địa chỉ bằng cách hash 2 chuổi ký tự với nhau.
-- **Recent**: Tất cả những địa chỉ đã nhập trước đó.
-- **System**: những địa chỉ chương trình mặc định được cung cấp bởi Solana
+### <a id="idl_instruction" href="javascript:void"></a> IDL instructions
+
+- `Program Address`: địa chỉ chương trình idl đang tương tác.
+- `File details`:
+  - File name.
+  - Icon <img src="https://unpkg.com/ionicons@5.5.2/dist/svg/trash-outline.svg" width="16"/>: click to remove idl file.
+- `Group button instructions`: Select instruction wana parse to transaction.
+- `Accounts`: Bao gồm những địa chỉ account cần để tạo và thực hiện transaction.
+- `Arguments`: Là những giá trị được truyền vào tương ứng với giá trị được yêu cầu của transaction.
+<p align="center"><img src="./src/static/images/docs/uploaded.png" width="600"/></p>
+
+- `Remaining accounts`: Là tham số được dùng trong một số transaction đặc biệt như tạo account, deposit .v.v .Có dạng như sau:
+
+  ```js
+    {
+      isSigner: boolean,
+      isWriter: boolean,
+      publicKey: PublicKey
+    }
+  ```
+
+  > _Bấm nút `Add` để tạo thêm và bấm nút <img src="https://unpkg.com/ionicons@5.5.2/dist/svg/trash-outline.svg" width="16"/> để xoá remaining account._
+
+<p align="center"><img src="./src/static/images/docs/remaining.png" width="600"/></p>
+
+#
+
+### <a id="auto" href="javascript:void"></a> Auto complete
+
+> Coming soon
+
+#
+
+### <a id="selection" href="javascript:void"></a> Selection
+
+Hỗ trợ người dùng điền nhanh chóng những trường của accounts, arguments và remaining.
+
+<p align="center"><img src="./src/static/images/docs/selection.png" width="400"/></p>
+
+- `Wallet Address`: địa chỉ ví được cung cấp từ parserProvider
+- `New Keypaire`: tạo 1 keypair mới.
+- `Program Account Data`: lấy dữ liệu của account từ địa chỉ account. Ví dụ nhập địa chỉ pool để lấy thông tin của pool.
+- `PDA - Token Account`: derive địa chỉ token acount từ địa chỉ mint và địa chỉ owner.
+- `PDA - Orther`: tạo một địa chỉ bằng cách hash 2 chuổi ký tự với nhau.
+- `Recents`: Tất cả những địa chỉ đã nhập trước đó.
+- `System`: những địa chỉ chương trình mặc định được cung cấp bởi Solana
+
+#
+
+### <a id="review" href="javascript:void"></a> Review
+
+Xem lại Transaction được tạo ra khi điền đầy đủ accounts và arguments của instruction.
+
+<p align="center"><img src="./src/static/images/docs/review.png" width="600"/></p>
+<p align="center"><img src="./src/static/images/docs/review_full.png" width="600"/></p>
+
+#
+
+### Project example: [https://github.com/DescartesNetwork/idl-parser](https://github.com/DescartesNetwork/idl-parser)
