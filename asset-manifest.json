@@ -10,7 +10,7 @@
     "static/js/node_modules_react-router-dom_esm_react-router-dom_js-_d6f00.feb20274.chunk.js": "/static/js/node_modules_react-router-dom_esm_react-router-dom_js-_d6f00.feb20274.chunk.js",
     "static/js/node_modules_react_index_js.237320b4.chunk.js": "/static/js/node_modules_react_index_js.237320b4.chunk.js",
     "static/css/src_bootstrap_app_tsx-node_modules_idl-parser-core_index_min_css-node_modules_rc-dialog_asset-5de8ab.eeae3762.chunk.css": "/static/css/src_bootstrap_app_tsx-node_modules_idl-parser-core_index_min_css-node_modules_rc-dialog_asset-5de8ab.eeae3762.chunk.css",
-    "static/js/src_bootstrap_app_tsx-node_modules_idl-parser-core_index_min_css-node_modules_rc-dialog_asset-5de8ab.0160696b.chunk.js": "/static/js/src_bootstrap_app_tsx-node_modules_idl-parser-core_index_min_css-node_modules_rc-dialog_asset-5de8ab.0160696b.chunk.js",
+    "static/js/src_bootstrap_app_tsx-node_modules_idl-parser-core_index_min_css-node_modules_rc-dialog_asset-5de8ab.7a1fd396.chunk.js": "/static/js/src_bootstrap_app_tsx-node_modules_idl-parser-core_index_min_css-node_modules_rc-dialog_asset-5de8ab.7a1fd396.chunk.js",
     "static/js/vendors-node_modules_react-dom_index_js.a498c0bc.chunk.js": "/static/js/vendors-node_modules_react-dom_index_js.a498c0bc.chunk.js",
     "static/js/_18f2-_0b7d-_25ed-_8131-_3fc0-_e4dd-_7bec-_ec71-_df0e-_887c-_c738-_9820-_7d1a-_b254-_ed1b-_d1-147343.547aa4f6.chunk.js": "/static/js/_18f2-_0b7d-_25ed-_8131-_3fc0-_e4dd-_7bec-_ec71-_df0e-_887c-_c738-_9820-_7d1a-_b254-_ed1b-_d1-147343.547aa4f6.chunk.js",
     "static/js/node_modules_web-vitals_dist_web-vitals_js.7e954327.chunk.js": "/static/js/node_modules_web-vitals_dist_web-vitals_js.7e954327.chunk.js",
@@ -21,7 +21,7 @@
     "static/css/vendors-node_modules_sentre_senhub_dist_index_js-node_modules_sentre_senhub_dist_static_image-55fa97.425bc3c8.chunk.css": "/static/css/vendors-node_modules_sentre_senhub_dist_index_js-node_modules_sentre_senhub_dist_static_image-55fa97.425bc3c8.chunk.css",
     "static/js/vendors-node_modules_sentre_senhub_dist_index_js-node_modules_sentre_senhub_dist_static_image-55fa97.1c4259c8.chunk.js": "/static/js/vendors-node_modules_sentre_senhub_dist_index_js-node_modules_sentre_senhub_dist_static_image-55fa97.1c4259c8.chunk.js",
     "static/js/vendors-node_modules_rc-dialog_es_index_js.1b6521c0.chunk.js": "/static/js/vendors-node_modules_rc-dialog_es_index_js.1b6521c0.chunk.js",
-    "static/js/vendors-node_modules_idl-parser-core_index_js.7285d80d.chunk.js": "/static/js/vendors-node_modules_idl-parser-core_index_js.7285d80d.chunk.js",
+    "static/js/vendors-node_modules_idl-parser-core_index_js.4b457a7f.chunk.js": "/static/js/vendors-node_modules_idl-parser-core_index_js.4b457a7f.chunk.js",
     "static/media/dark-bg-welcome.png": "/static/media/dark-bg-welcome.cfbd7a4df10674ca1e2b.png",
     "static/media/store-panel1.png": "/static/media/store-panel1.8b9b3b2cad894ca90c18.png",
     "static/media/store-bpanel2.png": "/static/media/store-bpanel2.32eef375b695595c9ff3.png",
@@ -75,7 +75,7 @@
     "node_modules_react-router-dom_esm_react-router-dom_js-_d6f00.feb20274.chunk.js.map": "/static/js/node_modules_react-router-dom_esm_react-router-dom_js-_d6f00.feb20274.chunk.js.map",
     "node_modules_react_index_js.237320b4.chunk.js.map": "/static/js/node_modules_react_index_js.237320b4.chunk.js.map",
     "src_bootstrap_app_tsx-node_modules_idl-parser-core_index_min_css-node_modules_rc-dialog_asset-5de8ab.eeae3762.chunk.css.map": "/static/css/src_bootstrap_app_tsx-node_modules_idl-parser-core_index_min_css-node_modules_rc-dialog_asset-5de8ab.eeae3762.chunk.css.map",
-    "src_bootstrap_app_tsx-node_modules_idl-parser-core_index_min_css-node_modules_rc-dialog_asset-5de8ab.0160696b.chunk.js.map": "/static/js/src_bootstrap_app_tsx-node_modules_idl-parser-core_index_min_css-node_modules_rc-dialog_asset-5de8ab.0160696b.chunk.js.map",
+    "src_bootstrap_app_tsx-node_modules_idl-parser-core_index_min_css-node_modules_rc-dialog_asset-5de8ab.7a1fd396.chunk.js.map": "/static/js/src_bootstrap_app_tsx-node_modules_idl-parser-core_index_min_css-node_modules_rc-dialog_asset-5de8ab.7a1fd396.chunk.js.map",
     "vendors-node_modules_react-dom_index_js.a498c0bc.chunk.js.map": "/static/js/vendors-node_modules_react-dom_index_js.a498c0bc.chunk.js.map",
     "node_modules_web-vitals_dist_web-vitals_js.7e954327.chunk.js.map": "/static/js/node_modules_web-vitals_dist_web-vitals_js.7e954327.chunk.js.map",
     "node_modules_react-router-dom_esm_react-router-dom_js-_d6f01.21e0ef8a.chunk.js.map": "/static/js/node_modules_react-router-dom_esm_react-router-dom_js-_d6f01.21e0ef8a.chunk.js.map",
@@ -85,7 +85,7 @@
     "vendors-node_modules_sentre_senhub_dist_index_js-node_modules_sentre_senhub_dist_static_image-55fa97.425bc3c8.chunk.css.map": "/static/css/vendors-node_modules_sentre_senhub_dist_index_js-node_modules_sentre_senhub_dist_static_image-55fa97.425bc3c8.chunk.css.map",
     "vendors-node_modules_sentre_senhub_dist_index_js-node_modules_sentre_senhub_dist_static_image-55fa97.1c4259c8.chunk.js.map": "/static/js/vendors-node_modules_sentre_senhub_dist_index_js-node_modules_sentre_senhub_dist_static_image-55fa97.1c4259c8.chunk.js.map",
     "vendors-node_modules_rc-dialog_es_index_js.1b6521c0.chunk.js.map": "/static/js/vendors-node_modules_rc-dialog_es_index_js.1b6521c0.chunk.js.map",
-    "vendors-node_modules_idl-parser-core_index_js.7285d80d.chunk.js.map": "/static/js/vendors-node_modules_idl-parser-core_index_js.7285d80d.chunk.js.map"
+    "vendors-node_modules_idl-parser-core_index_js.4b457a7f.chunk.js.map": "/static/js/vendors-node_modules_idl-parser-core_index_js.4b457a7f.chunk.js.map"
   },
   "entrypoints": [
     "static/js/main.8efc516e.js"
