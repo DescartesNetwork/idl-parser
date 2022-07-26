@@ -21,7 +21,7 @@
     "static/css/vendors-node_modules_sentre_senhub_dist_index_js-node_modules_sentre_senhub_dist_static_image-55fa97.425bc3c8.chunk.css": "/static/css/vendors-node_modules_sentre_senhub_dist_index_js-node_modules_sentre_senhub_dist_static_image-55fa97.425bc3c8.chunk.css",
     "static/js/vendors-node_modules_sentre_senhub_dist_index_js-node_modules_sentre_senhub_dist_static_image-55fa97.c35a3575.chunk.js": "/static/js/vendors-node_modules_sentre_senhub_dist_index_js-node_modules_sentre_senhub_dist_static_image-55fa97.c35a3575.chunk.js",
     "static/js/vendors-node_modules_rc-dialog_es_index_js.1b6521c0.chunk.js": "/static/js/vendors-node_modules_rc-dialog_es_index_js.1b6521c0.chunk.js",
-    "static/js/vendors-node_modules_idl-parser-core_index_js.503f81c8.chunk.js": "/static/js/vendors-node_modules_idl-parser-core_index_js.503f81c8.chunk.js",
+    "static/js/vendors-node_modules_idl-parser-core_index_js.aac4df90.chunk.js": "/static/js/vendors-node_modules_idl-parser-core_index_js.aac4df90.chunk.js",
     "static/media/dark-bg-welcome.png": "/static/media/dark-bg-welcome.cfbd7a4df10674ca1e2b.png",
     "static/media/store-panel1.png": "/static/media/store-panel1.8b9b3b2cad894ca90c18.png",
     "static/media/store-bpanel2.png": "/static/media/store-bpanel2.32eef375b695595c9ff3.png",
@@ -85,7 +85,7 @@
     "vendors-node_modules_sentre_senhub_dist_index_js-node_modules_sentre_senhub_dist_static_image-55fa97.425bc3c8.chunk.css.map": "/static/css/vendors-node_modules_sentre_senhub_dist_index_js-node_modules_sentre_senhub_dist_static_image-55fa97.425bc3c8.chunk.css.map",
     "vendors-node_modules_sentre_senhub_dist_index_js-node_modules_sentre_senhub_dist_static_image-55fa97.c35a3575.chunk.js.map": "/static/js/vendors-node_modules_sentre_senhub_dist_index_js-node_modules_sentre_senhub_dist_static_image-55fa97.c35a3575.chunk.js.map",
     "vendors-node_modules_rc-dialog_es_index_js.1b6521c0.chunk.js.map": "/static/js/vendors-node_modules_rc-dialog_es_index_js.1b6521c0.chunk.js.map",
-    "vendors-node_modules_idl-parser-core_index_js.503f81c8.chunk.js.map": "/static/js/vendors-node_modules_idl-parser-core_index_js.503f81c8.chunk.js.map"
+    "vendors-node_modules_idl-parser-core_index_js.aac4df90.chunk.js.map": "/static/js/vendors-node_modules_idl-parser-core_index_js.aac4df90.chunk.js.map"
   },
   "entrypoints": [
     "static/js/main.20298bcc.js"
