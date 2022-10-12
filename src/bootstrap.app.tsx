@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 import { Provider } from 'react-redux'
-import { WalletProvider, UIProvider, rpc } from '@sentre/senhub'
+import { AntdProvider, rpc } from '@sentre/senhub'
 import { ParserProvider } from 'idl-parser-core'
 
 import View from 'view'
@@ -19,8 +19,8 @@ export const Page = () => {
   const [walletAddress, setWalletAddress] = useState('')
 
   const getWalletAddress = useCallback(async () => {
-    if (!window.sentre.wallet) return
-    const address = await window.sentre.wallet.getAddress()
+    if (!window.sentre.solana) return
+    const address = await window.sentre.solana.getAddress()
     setWalletAddress(address)
   }, [])
 
@@ -29,20 +29,18 @@ export const Page = () => {
   }, [getWalletAddress])
 
   return (
-    <UIProvider appId={appId} antd={{ prefixCls: appId }}>
-      <WalletProvider>
-        <Provider store={model}>
-          <ParserProvider
-            rpc={rpc}
-            walletAddress={walletAddress}
-            programAddresses={{ provider: '' }}
-            appId={appId}
-          >
-            <View />
-          </ParserProvider>
-        </Provider>
-      </WalletProvider>
-    </UIProvider>
+    <AntdProvider appId={appId} prefixCls={appId}>
+      <Provider store={model}>
+        <ParserProvider
+          rpc={rpc}
+          walletAddress={walletAddress}
+          programAddresses={{ provider: '' }}
+          appId={appId}
+        >
+          <View />
+        </ParserProvider>
+      </Provider>
+    </AntdProvider>
   )
 }
 

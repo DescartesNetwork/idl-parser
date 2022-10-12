@@ -1,5 +1,5 @@
 import { AnchorProvider } from '@project-serum/anchor'
-import { rpc, util } from '@sentre/senhub/dist'
+import { rpc, util } from '@sentre/senhub'
 
 import { PublicKey, Connection, Transaction } from '@solana/web3.js'
 
@@ -20,7 +20,7 @@ export const notifyError = (er: any) => {
 
 export const getAnchorProvider = (walletAddress: string) => {
   const node = rpc
-  const wallet = window.sentre.wallet
+  const wallet = window.sentre.solana
   const connection = new Connection(node, 'confirmed')
 
   const signAllTransactions = async (transactions: Transaction[]) => {

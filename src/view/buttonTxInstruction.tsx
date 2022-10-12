@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useWallet } from '@sentre/senhub'
+import { useWalletAddress } from '@sentre/senhub'
 import { Transaction } from '@solana/web3.js'
 import { useParser } from 'idl-parser-core'
 
@@ -11,9 +11,7 @@ type ButtonTxInstructProps = { instruct: string } & ButtonProps
 const ButtonTxInstruct = ({ instruct, ...props }: ButtonTxInstructProps) => {
   const [loading, setLoading] = useState(false)
   const { txInstructions } = useParser()
-  const {
-    wallet: { address: walletAddress },
-  } = useWallet()
+  const walletAddress = useWalletAddress()
 
   const onClick = async (key: string) => {
     try {
